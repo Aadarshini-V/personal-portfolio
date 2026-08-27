@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-        content="Personal portfolio website of a Computer Science Engineering student and aspiring Frontend Developer.">
+    <meta
+        name="description"
+        content="Personal portfolio of Aadarshini V - aspiring software developer and web developer."
+    >
 
-    <meta name="author" content="Aadarshini V">
+    <meta
+        name="author"
+        content="Aadarshini V"
+    >
 
-    <title>Aadarshini V | Frontend Developer Portfolio</title>
+    <title>Aadarshini V | Portfolio</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+    <header class="header" id="header">
 
-    <header class="header">
-
-        <nav class="navbar">
+        <nav class="navbar container">
 
             <a href="#home" class="logo">
-                Aadarshini V<span></span>
+                Aadarshini<span>.</span>
             </a>
 
-            <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu">
-                <i class="fas fa-bars"></i>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
-            <ul class="nav-links" id="nav-links">
+            <ul class="nav-menu" id="nav-menu">
 
                 <li>
                     <a href="#home" class="nav-link active">Home</a>
@@ -61,6 +63,10 @@
                 </li>
 
                 <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+
+                <li>
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
 
@@ -72,6 +78,17 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
 
+                <li>
+                    <button
+                        class="theme-toggle"
+                        id="theme-toggle"
+                        type="button"
+                        aria-label="Toggle dark and light theme"
+                    >
+                        <span id="theme-icon">☀️</span>
+                    </button>
+                </li>
+
             </ul>
 
         </nav>
@@ -81,467 +98,783 @@
 
     <main>
 
-        <!-- ================= HOME ================= -->
+        <!-- =========================
+             HOME SECTION
+        ========================== -->
+        <section class="hero section" id="home">
 
-        <section class="home section" id="home">
+            <div class="hero-bg"></div>
 
-            <div class="home-content">
+            <div class="container hero-container">
 
-                <p class="hello">Hello, I'm</p>
+                <div class="hero-content reveal">
 
-                <h1>Aadarshini V</h1>
+                    <p class="hero-greeting">
+                        Hello, I'm
+                    </p>
 
-                <h2>
-                    Computer Science Engineering Student
-                </h2>
+                    <h1>
+                        Aadarshini <span>V</span>
+                    </h1>
 
-                <p class="home-description">
-                    I'm an aspiring Frontend Developer passionate about
-                    creating responsive, user-friendly and visually
-                    appealing websites using modern web technologies.
-                </p>
+                    <h2>
+                        Aspiring Software Developer
+                    </h2>
 
-                <div class="home-buttons">
+                    <p class="hero-description">
+                        I am passionate about creating responsive websites,
+                        solving programming problems, and continuously
+                        improving my technical skills.
+                    </p>
 
-                    <a href="#projects" class="btn primary-btn">
-                        View My Work
-                    </a>
+                    <div class="hero-buttons">
 
-                    <a href="#contact" class="btn secondary-btn">
-                        Contact Me
-                    </a>
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <!-- Replace these links with your actual profiles -->
+
+                        <a
+                            href="YOUR_GITHUB_URL"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="YOUR_LINKEDIN_URL"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            LinkedIn
+                        </a>
+
+                    </div>
 
                 </div>
 
-                <div class="social-links">
 
-                    <a href="https://github.com/" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
+                <div class="hero-visual reveal">
 
-                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                    <div class="profile-card">
 
-                    <a href="mailto:aadarshiniv.work@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                        <div class="profile-circle">
+                            AV
+                        </div>
 
-                </div>
+                        <div class="code-window">
 
-            </div>
+                            <div class="window-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
 
+                            <div class="code-content">
+                                <p>
+                                    <span class="code-purple">const</span>
+                                    developer = {
+                                </p>
 
-            <div class="home-image">
+                                <p class="indent">
+                                    name:
+                                    <span class="code-green">
+                                        "Aadarshini"
+                                    </span>,
+                                </p>
 
-                <div class="profile-circle">
+                                <p class="indent">
+                                    role:
+                                    <span class="code-green">
+                                        "Developer"
+                                    </span>,
+                                </p>
 
-                    <div class="profile-icon">
-                        <i class="fas fa-user"></i>
+                                <p class="indent">
+                                    passion:
+                                    <span class="code-green">
+                                        "Web Development"
+                                    </span>
+                                </p>
+
+                                <p>};</p>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
+            <a href="#about" class="scroll-down" aria-label="Scroll to About">
+                ↓
+            </a>
+
         </section>
 
 
-        <!-- ================= ABOUT ================= -->
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+        <section class="section" id="about">
 
-        <section class="about section" id="about">
+            <div class="container">
 
-            <div class="section-title">
+                <div class="section-heading reveal">
 
-                <p>Get To Know Me</p>
+                    <p class="section-label">
+                        Get To Know Me
+                    </p>
 
-                <h2>About <span>Me</span></h2>
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
 
-            </div>
+                    <div class="heading-line"></div>
+
+                </div>
 
 
-            <div class="about-container">
+                <div class="about-grid">
 
-                <div class="about-image">
+                    <div class="about-image reveal">
 
-                    <div class="about-card">
+                        <div class="about-card">
 
-                        <i class="fas fa-laptop-code"></i>
+                            <div class="about-initials">
+                                AV
+                            </div>
 
-                        <h3>Frontend Developer</h3>
+                            <div class="about-decoration decoration-one"></div>
+                            <div class="about-decoration decoration-two"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content reveal">
+
+                        <h3>
+                            An enthusiastic learner building for the web.
+                        </h3>
 
                         <p>
-                            Building modern and responsive websites.
+                            I am an aspiring software developer with an interest
+                            in web development and programming. I enjoy learning
+                            new technologies and turning ideas into simple,
+                            user-friendly digital experiences.
                         </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="about-content">
-
-                    <h3>
-                        I'm a passionate Computer Science student.
-                    </h3>
-
-                    <p>
-                        I am a third-year Computer Science and Engineering
-                        student interested in web development and software
-                        development.
-                    </p>
-
-                    <p>
-                        I enjoy learning new technologies and turning ideas
-                        into useful and interactive digital experiences.
-                        Currently, I am focusing on HTML, CSS, JavaScript,
-                        Java and Data Structures.
-                    </p>
-
-                    <p>
-                        My goal is to become a skilled software professional
-                        and contribute to real-world technology projects.
-                    </p>
-
-
-                    <div class="about-info">
-
-                        <div>
-                            <strong>Name:</strong>
-                            <span>Aadarshini V</span>
-                        </div>
-
-                        <div>
-                            <strong>Degree:</strong>
-                            <span>B.E. Computer Science Engineering</span>
-                        </div>
-
-                        <div>
-                            <strong>Year:</strong>
-                            <span>Third Year</span>
-                        </div>
-
-                        <div>
-                            <strong>Interest:</strong>
-                            <span>Web Development</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section class="skills section" id="skills">
-
-            <div class="section-title">
-
-                <p>What I Know</p>
-
-                <h2>My <span>Skills</span></h2>
-
-            </div>
-
-
-            <div class="skills-container">
-
-
-                <!-- HTML -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-
-                    <h3>HTML5</h3>
-
-                    <p>
-                        Semantic and accessible webpage structure.
-                    </p>
-
-                    <div class="progress">
-
-                        <div class="progress-bar html"></div>
-
-                    </div>
-
-                    <span>90%</span>
-
-                </div>
-
-
-                <!-- CSS -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-
-                    <h3>CSS3</h3>
-
-                    <p>
-                        Responsive layouts, animations and styling.
-                    </p>
-
-                    <div class="progress">
-
-                        <div class="progress-bar css"></div>
-
-                    </div>
-
-                    <span>85%</span>
-
-                </div>
-
-
-                <!-- JavaScript -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-
-                    <h3>JavaScript</h3>
-
-                    <p>
-                        Interactive web pages and DOM manipulation.
-                    </p>
-
-                    <div class="progress">
-
-                        <div class="progress-bar javascript"></div>
-
-                    </div>
-
-                    <span>75%</span>
-
-                </div>
-
-
-                <!-- Java -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fab fa-java"></i>
-                    </div>
-
-                    <h3>Java</h3>
-
-                    <p>
-                        Object-oriented programming and problem solving.
-                    </p>
-
-                    <div class="progress">
-
-                        <div class="progress-bar java"></div>
-
-                    </div>
-
-                    <span>70%</span>
-
-                </div>
-
-
-                <!-- Git -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-
-                    <h3>Git & GitHub</h3>
-
-                    <p>
-                        Version control and project management.
-                    </p>
-
-                    <div class="progress">
-
-                        <div class="progress-bar git"></div>
-
-                    </div>
-
-                    <span>75%</span>
-
-                </div>
-
-
-                <!-- Python -->
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-
-                    <h3>Python</h3>
-
-                    <p>
-                        Basic programming and data analysis.
-                    </p>
-
-                    <div class="progress">
-
-                        <div class="progress-bar python"></div>
-
-                    </div>
-
-                    <span>65%</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section class="projects section" id="projects">
-
-            <div class="section-title">
-
-                <p>My Recent Work</p>
-
-                <h2>My <span>Projects</span></h2>
-
-            </div>
-
-
-            <div class="projects-container">
-
-
-                <!-- Project 1 -->
-
-                <article class="project-card">
-
-                    <div class="project-image project-one">
-
-                        <i class="fas fa-globe"></i>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <span class="project-number">
-                            Project 01
-                        </span>
-
-                        <h3>Personal Portfolio Website</h3>
 
                         <p>
-                            A responsive personal portfolio website
-                            created using HTML, CSS and JavaScript
-                            to showcase my skills, projects and resume.
+                            My current technical toolkit includes HTML5, CSS3,
+                            JavaScript, Java, Python, and Git/GitHub. I am
+                            focused on strengthening my problem-solving skills
+                            and gaining practical development experience.
                         </p>
 
-                        <div class="project-tech">
+                        <div class="about-highlights">
 
-                            <span>HTML</span>
-                            <span>CSS</span>
+                            <div class="highlight">
+                                <strong>01</strong>
+                                <span>Continuous Learning</span>
+                            </div>
+
+                            <div class="highlight">
+                                <strong>02</strong>
+                                <span>Problem Solving</span>
+                            </div>
+
+                            <div class="highlight">
+                                <strong>03</strong>
+                                <span>Web Development</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS SECTION
+        ========================== -->
+        <section class="section section-alt" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        What I Work With
+                    </p>
+
+                    <h2>
+                        My <span>Skills</span>
+                    </h2>
+
+                    <div class="heading-line"></div>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <!-- HTML -->
+                    <div class="skill-card reveal">
+
+                        <div class="skill-top">
+                            <div class="skill-icon">HTML</div>
+
+                            <span>90%</span>
+                        </div>
+
+                        <h3>HTML5</h3>
+
+                        <p>
+                            Semantic and accessible webpage structure.
+                        </p>
+
+                        <div class="progress">
+                            <div
+                                class="progress-bar"
+                                style="--progress: 90%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- CSS -->
+                    <div class="skill-card reveal">
+
+                        <div class="skill-top">
+                            <div class="skill-icon">CSS</div>
+
+                            <span>85%</span>
+                        </div>
+
+                        <h3>CSS3</h3>
+
+                        <p>
+                            Responsive layouts, animations and modern styling.
+                        </p>
+
+                        <div class="progress">
+                            <div
+                                class="progress-bar"
+                                style="--progress: 85%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- JavaScript -->
+                    <div class="skill-card reveal">
+
+                        <div class="skill-top">
+                            <div class="skill-icon">JS</div>
+
+                            <span>75%</span>
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Interactive interfaces and client-side functionality.
+                        </p>
+
+                        <div class="progress">
+                            <div
+                                class="progress-bar"
+                                style="--progress: 75%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Java -->
+                    <div class="skill-card reveal">
+
+                        <div class="skill-top">
+                            <div class="skill-icon">JV</div>
+
+                            <span>75%</span>
+                        </div>
+
+                        <h3>Java</h3>
+
+                        <p>
+                            Object-oriented programming and problem solving.
+                        </p>
+
+                        <div class="progress">
+                            <div
+                                class="progress-bar"
+                                style="--progress: 75%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Python -->
+                    <div class="skill-card reveal">
+
+                        <div class="skill-top">
+                            <div class="skill-icon">PY</div>
+
+                            <span>70%</span>
+                        </div>
+
+                        <h3>Python</h3>
+
+                        <p>
+                            Programming fundamentals and application logic.
+                        </p>
+
+                        <div class="progress">
+                            <div
+                                class="progress-bar"
+                                style="--progress: 70%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Git -->
+                    <div class="skill-card reveal">
+
+                        <div class="skill-top">
+                            <div class="skill-icon">Git</div>
+
+                            <span>80%</span>
+                        </div>
+
+                        <h3>Git & GitHub</h3>
+
+                        <p>
+                            Version control and collaborative development.
+                        </p>
+
+                        <div class="progress">
+                            <div
+                                class="progress-bar"
+                                style="--progress: 80%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPERIENCE SECTION
+        ========================== -->
+        <section class="section" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        My Journey
+                    </p>
+
+                    <h2>
+                        Experience & <span>Learning</span>
+                    </h2>
+
+                    <div class="heading-line"></div>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Current
+                            </span>
+
+                            <h3>
+                                Software Development Intern
+                            </h3>
+
+                            <h4>
+                                Internship Project
+                            </h4>
+
+                            <p>
+                                Developing and improving a personal portfolio
+                                website using HTML, CSS and JavaScript while
+                                applying responsive design and client-side
+                                validation concepts.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Ongoing
+                            </span>
+
+                            <h3>
+                                Technical Skill Development
+                            </h3>
+
+                            <h4>
+                                Self-Learning & Practice
+                            </h4>
+
+                            <p>
+                                Practising Java, Python, JavaScript, web
+                                development, Git and problem-solving through
+                                projects and coding exercises.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS SECTION
+        ========================== -->
+        <section class="section section-alt" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        My Recent Work
+                    </p>
+
+                    <h2>
+                        Featured <span>Projects</span>
+                    </h2>
+
+                    <div class="heading-line"></div>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-card reveal">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>
+                            Personal Portfolio Website
+                        </h3>
+
+                        <p>
+                            A responsive personal portfolio website created
+                            to showcase my skills, projects, education and
+                            contact information.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
                             <span>JavaScript</span>
-
                         </div>
 
                         <div class="project-links">
 
-                            <a href=" https://github.com/Aadarshini-V/personal-portfolio" target="_blank">
-                                <i class="fab fa-github"></i>
-                                GitHub
+                            <a
+                                href="https://aadarshini-v.github.io/personal-portfolio/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Demo ↗
                             </a>
 
-                            <a href="https://aadarshini-v.github.io/personal-portfolio/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
+                            <a
+                                href="YOUR_GITHUB_PROJECT_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub ↗
                             </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card reveal">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-icon">
+                            ✈
+                        </div>
+
+                        <h3>
+                            Travel Website
+                        </h3>
+
+                        <p>
+                            A responsive travel-focused website concept
+                            designed with a clean interface and user-friendly
+                            navigation.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="YOUR_TRAVEL_PROJECT_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Demo ↗
+                            </a>
+
+                            <a
+                                href="YOUR_GITHUB_PROJECT_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+                    <article class="project-card reveal">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <div class="project-icon">
+                            ◈
+                        </div>
+
+                        <h3>
+                            Web Development Project
+                        </h3>
+
+                        <p>
+                            A practical web development project demonstrating
+                            responsive design, structured HTML, CSS styling and
+                            JavaScript interactions.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="YOUR_PROJECT_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Demo ↗
+                            </a>
+
+                            <a
+                                href="YOUR_GITHUB_PROJECT_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESUME SECTION
+        ========================== -->
+        <section class="section" id="resume">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        My Background
+                    </p>
+
+                    <h2>
+                        Resume & <span>Education</span>
+                    </h2>
+
+                    <div class="heading-line"></div>
+
+                </div>
+
+
+                <div class="resume-grid">
+
+                    <div class="education-card reveal">
+
+                        <div class="card-label">
+                            EDUCATION
+                        </div>
+
+                        <div class="education-item">
+
+                            <span class="education-icon">
+                                🎓
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Your Degree / Course
+                                </h3>
+
+                                <p>
+                                    Your College / University
+                                </p>
+
+                                <span>
+                                    Your Year
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="education-item">
+
+                            <span class="education-icon">
+                                📚
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Your Previous Qualification
+                                </h3>
+
+                                <p>
+                                    Your School / Institution
+                                </p>
+
+                                <span>
+                                    Your Year
+                                </span>
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                </article>
-    
-        <!-- ================= RESUME ================= -->
 
-        <section class="resume section" id="resume">
+                    <div class="resume-download reveal">
 
-            <div class="section-title">
+                        <div class="resume-icon">
+                            📄
+                        </div>
 
-                <p>My Qualifications</p>
-
-                <h2>My <span>Resume</span></h2>
-
-            </div>
-
-
-            <div class="resume-container">
-
-
-                <div class="resume-content">
-
-                    <div class="resume-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-
-                    <h3>Want to know more about me?</h3>
-
-                    <p>
-                        Download my resume to learn more about my
-                        education, skills, projects and experience.
-                    </p>
-
-                    <a href="Aadarshini_V_Frontend_Developer_Resume_Updated (1).pdf"
-                       class="btn primary-btn"
-                       download>
-                        <i class="fas fa-download"></i>
-                        Download Resume
-                    </a>
-
-                </div>
-
-
-                <div class="education">
-
-                    <h3>
-                        <i class="fas fa-graduation-cap"></i>
-                        Education
-                    </h3>
-
-
-                    <div class="timeline-item">
-
-                        <span>2024 - 2028</span>
-
-                        <h4>
-                            B.E. Computer Science and Engineering
-                        </h4>
+                        <h3>
+                            Want to know more?
+                        </h3>
 
                         <p>
-                            GRT Institute of Engineering and Technology
+                            Download my resume to learn more about my
+                            education, technical skills, projects and
+                            experience.
                         </p>
 
-                    </div>
+                        <!--
+                            Put your PDF resume in the same folder as this
+                            index.html and rename it to:
 
+                            Aadarshini-V-Resume.pdf
+                        -->
 
-                    <div class="timeline-item">
-
-                        <span>Higher Secondary Education</span>
-
-                        
-
-                        <p>
-                            Completed higher secondary education in 2024.
-                        </p>
+                        <a
+                            href="Aadarshini-V-Resume.pdf"
+                            class="btn btn-primary"
+                            download
+                        >
+                            Download Resume ↓
+                        </a>
 
                     </div>
 
@@ -552,119 +885,161 @@
         </section>
 
 
-        <!-- ================= CONTACT ================= -->
+        <!-- =========================
+             CONTACT SECTION
+        ========================== -->
+        <section class="section section-alt" id="contact">
 
-        <section class="contact section" id="contact">
+            <div class="container">
 
-            <div class="section-title">
+                <div class="section-heading reveal">
 
-                <p>Let's Connect</p>
-
-                <h2>Contact <span>Me</span></h2>
-
-            </div>
-
-
-            <div class="contact-container">
-
-
-                <!-- Contact Information -->
-
-                <div class="contact-info">
-
-                    <h3>
-                        Let's work together
-                    </h3>
-
-                    <p>
-                        Have a project idea, internship opportunity,
-                        or simply want to connect? Feel free to send
-                        me a message.
+                    <p class="section-label">
+                        Let's Connect
                     </p>
 
+                    <h2>
+                        Contact <span>Me</span>
+                    </h2>
 
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-
-                        <div>
-                            <h4>Email</h4>
-                            <p>aadarshiniv.work@gmail.com</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            <i class="fas fa-location-dot"></i>
-                        </div>
-
-                        <div>
-                            <h4>Location</h4>
-                            <p>India</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <p>https://www.linkedin.com/in/aadarshini-v-961548421/</p>
-                        </div>
-
-                    </div>
+                    <div class="heading-line"></div>
 
                 </div>
 
 
-                <!-- Contact Form -->
+                <div class="contact-grid">
 
-                <div class="contact-form-container">
+                    <div class="contact-info reveal">
 
-                    <form id="contact-form" novalidate>
+                        <h3>
+                            Let's work together.
+                        </h3>
 
-                        <div class="form-group">
+                        <p>
+                            Have a project idea, internship opportunity or
+                            simply want to connect? Feel free to reach out.
+                        </p>
 
-                            <label for="name">
-                                Your Name
-                            </label>
 
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Enter your name"
-                            >
+                        <div class="contact-details">
 
-                            <small class="error-message" id="name-error"></small>
+                            <div class="contact-detail">
+
+                                <div class="contact-icon">
+                                    @
+                                </div>
+
+                                <div>
+                                    <span>Email</span>
+
+                                    <!-- Replace with your actual email -->
+                                    <a href="mailto:YOUR_EMAIL@example.com">
+                                        YOUR_EMAIL@example.com
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="contact-detail">
+
+                                <div class="contact-icon">
+                                    in
+                                </div>
+
+                                <div>
+                                    <span>LinkedIn</span>
+
+                                    <!-- Replace with your actual LinkedIn -->
+                                    <a
+                                        href="YOUR_LINKEDIN_URL"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Connect on LinkedIn
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="contact-detail">
+
+                                <div class="contact-icon">
+                                    GH
+                                </div>
+
+                                <div>
+                                    <span>GitHub</span>
+
+                                    <!-- Replace with your actual GitHub -->
+                                    <a
+                                        href="YOUR_GITHUB_URL"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        View my GitHub
+                                    </a>
+                                </div>
+
+                            </div>
 
                         </div>
 
+                    </div>
 
-                        <div class="form-group">
 
-                            <label for="email">
-                                Your Email
-                            </label>
+                    <!-- CONTACT FORM -->
+                    <form
+                        class="contact-form reveal"
+                        id="contact-form"
+                        novalidate
+                    >
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Enter your email"
-                            >
+                        <div class="form-row">
 
-                            <small class="error-message" id="email-error"></small>
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    autocomplete="name"
+                                >
+
+                                <small
+                                    class="error-message"
+                                    id="name-error"
+                                ></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    autocomplete="email"
+                                >
+
+                                <small
+                                    class="error-message"
+                                    id="email-error"
+                                ></small>
+
+                            </div>
 
                         </div>
 
@@ -679,10 +1054,13 @@
                                 type="text"
                                 id="subject"
                                 name="subject"
-                                placeholder="Enter subject"
+                                placeholder="What would you like to discuss?"
                             >
 
-                            <small class="error-message" id="subject-error"></small>
+                            <small
+                                class="error-message"
+                                id="subject-error"
+                            ></small>
 
                         </div>
 
@@ -697,22 +1075,30 @@
                                 id="message"
                                 name="message"
                                 rows="6"
-                                placeholder="Enter your message"
+                                placeholder="Write your message here..."
                             ></textarea>
 
-                            <small class="error-message" id="message-error"></small>
+                            <small
+                                class="error-message"
+                                id="message-error"
+                            ></small>
 
                         </div>
 
 
                         <button
                             type="submit"
-                            class="btn primary-btn submit-btn">
-                            Send Message
+                            class="btn btn-primary form-submit"
+                        >
+                            Send Message →
                         </button>
 
-
-                        <p id="form-success" class="form-success"></p>
+                        <div
+                            class="form-success"
+                            id="form-success"
+                            role="status"
+                            aria-live="polite"
+                        ></div>
 
                     </form>
 
@@ -725,47 +1111,41 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
-
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer class="footer">
 
-        <div class="footer-container">
+        <div class="container footer-container">
 
             <div>
-
-                <h3>Aadarshini V<span></span></h3>
+                <a href="#home" class="logo">
+                    Aadarshini<span>.</span>
+                </a>
 
                 <p>
-                    Aspiring Frontend Developer
+                    Building, learning and growing one project at a time.
                 </p>
-
             </div>
 
 
-            <div class="footer-social">
+            <div class="footer-links">
 
-                <a href="" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:aadarshiniv.work@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
 
             </div>
 
         </div>
 
 
-        <div class="copyright">
+        <div class="footer-bottom">
 
             <p>
-                © <span id="year"></span>
-                Aadarshini V. All Rights Reserved.
+                © <span id="current-year"></span>
+                Aadarshini V. All rights reserved.
             </p>
 
         </div>
@@ -773,22 +1153,20 @@
     </footer>
 
 
-    <!-- Scroll To Top -->
-
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
     <button
-        id="scroll-top"
-        class="scroll-top"
-        aria-label="Scroll to top">
-
-        <i class="fas fa-arrow-up"></i>
-
+        class="back-to-top"
+        id="back-to-top"
+        aria-label="Back to top"
+        type="button"
+    >
+        ↑
     </button>
 
-
-    <!-- JavaScript -->
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
